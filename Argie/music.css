@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://img.freepik.com/premium-photo/nebula-galaxy-background_469558-17578.jpg');
+    background-size: cover;
+    padding: 2rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+nav {
+    color: white;
+}
+.bet {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 140px;
+    box-shadow: 0 0 8px 2px #888;
+    border-radius: 10px;
+}
+.bet ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+.bet ul li a {
+    text-decoration: none;
+    color: #ffff
+}
+.bet ul li a:hover{
+    color:#4040ee;
+    border-bottom: 1px solid #ffff;
+}

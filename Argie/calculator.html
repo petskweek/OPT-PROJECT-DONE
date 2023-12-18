@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-item">
+            <h1>MY PORTFOLIO</h1>
+            <ul>
+                <li><a href="file:///C:/Users/Administrator/Documents/Argie/home.html">BACK</a></li>
+                <li><a href="file:///C:/Users/Administrator/Documents/Argie/index.html">LOG OUT</a></li>
+                <li><a href="file:///C:/Users/Administrator/Documents/Argie/aboutme.html">ABOUT ME</a></li>
+                <li><a href="file:///C:/Users/Administrator/Documents/Argie/calculator.html">CALCULATOR</a></li>
+                <li><a href="file:///C:/Users/Administrator/Documents/Argie/music.html">MUSIC</a></li>
+                <li><a href="file:///C:/Users/Administrator/Documents/Argie/image.html">IMAGE GALLERY</a></li>
+            </ul>
+        </div>
+    </nav>
+        <div class="calculator">
+        <h1>Calculator</h1>
+        <input type="text" id="result" disabled>
+        <button onclick="clearResult()">C</button>
+        <button onclick="calculate('/')">/</button>
+        <button onclick="calculate('7')">7</button>
+        <button onclick="calculate('8')">8</button>
+        <button onclick="calculate('9')">9</button>
+        <button onclick="calculate('*')">*</button>
+        <button onclick="calculate('4')">4</button>
+        <button onclick="calculate('5')">5</button>
+        <button onclick="calculate('6')">6</button>
+        <button onclick="calculate('-')">-</button>
+        <button onclick="calculate('1')">1</button>
+        <button onclick="calculate('2')">2</button>
+        <button onclick="calculate('3')">3</button>
+        <button onclick="calculate('+')">+</button>
+        <button onclick="calculate('0')">0</button>
+        <button onclick="calculate('.')">.</button>
+        <button onclick="calculateResult()">=</button>
+    </div>
+
+<script>
+    function calculate(value) {
+        document.getElementById('result').value += value;
+    }
+
+    function calculateResult() {
+        let result = document.getElementById('result').value;
+        let calculatedResult = eval(result);
+        document.getElementById('result').value = calculatedResult;
+    }
+
+    function clearResult() {
+        document.getElementById('result').value = '';
+    }
+</script>
+</body>
+</html>

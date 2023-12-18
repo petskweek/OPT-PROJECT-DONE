@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div>
+        <form id="passwordForm" onsubmit="submitForm(event)">
+            <label for="password">
+                Input Password
+                <input type="password" id="passwordInput" required value="secretPassword">
+            </label>
+
+            <button type="submit">SUMBIT</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function calculate(value) {
+    document.getElementById('result').value += value;
+}
+
+function calculateResult() {
+    let result = document.getElementById('result').value;
+    let calculatedResult = eval(result);
+    document.getElementById('result').value = calculatedResult;
+}
+
+function clearResult() {
+    document.getElementById('result').value = '';
+}
+    </script>
+</body>
+</html>
